@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.10/angular.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Angular SVG Clock</title>
+    <style>
+        #clock-face {
+            stroke-width: 2px;
+        }
+        #ticks {
+            stroke-width: 2px;
+        }
+        #hour-hand {
+            stroke-width: 2px;
+        }
+        #minute-hand {
+            stroke-width: 1.5px;
+        }
+        #second-hand {
+            stroke-width: 1px;
+        }
+        #numbers {
+            font-family: sans-serif;
+            font-size: 7pt;
+            font-weight: bold;
+            text-anchor: middle;
+            stroke: none;
+            fill: black;
+        }
+    </style>
+</head>
+<body ng-app="angularClock">
+
+<clock size="200" hour-number="true"></clock>
+<script src="app.js"></script>
+</body>
+</html>
