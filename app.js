@@ -15,7 +15,7 @@ angular.module('angularClock', [])
                     size: '@?'          //size of the clock.
             },
             templateUrl: 'clock-template.html',
-            link: function(scope){
+            link: function(scope, element){
 
                 //Declaration.
                 var clock, now, sec, min, hour, secAngle, minAngle, hourAngle, secHand, minHand, hourHand;
@@ -27,14 +27,14 @@ angular.module('angularClock', [])
                 scope.size = scope.size || 100;
 
                 //set width and height of clock.
-                clock = document.getElementById('clock');
+                clock = element[0].querySelector('#clock');
                 clock.setAttribute("height", scope.size);
                 clock.setAttribute("width", scope.size);
 
                 //get clock handles.
-                secHand = document.getElementById('second-hand');
-                minHand = document.getElementById('minute-hand');
-                hourHand = document.getElementById('hour-hand');
+                secHand = element[0].querySelector('#second-hand');
+                minHand = element[0].querySelector('#minute-hand');
+                hourHand = element[0].querySelector('#hour-hand');
 
                 function startClock(){
                     now = new Date();
