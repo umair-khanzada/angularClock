@@ -1,0 +1,27 @@
+
+*{
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+#clock-face {
+    stroke-width: 2px;
+}
+#ticks {
+    stroke-width: 2px;
+}
+#hour-hand {
+    stroke-width: 2px;
+}
+#minute-hand {
+    stroke-width: 1.5px;
+}
+#second-hand {
+    stroke-width: 1px;
+}
+#numbers {
+    font-family: sans-serif;
+    font-size: 7pt;
+    font-weight: bold;
+    text-anchor: middle;
+    stroke: none;
+    fill: black;
+}
