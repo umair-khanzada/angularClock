@@ -3,6 +3,10 @@ A svg analog clock directive for angular.js
 
 ___ 
 
+###Demo
+[https://umair-khanzada.github.io/angularClock/](https://umair-khanzada.github.io/angularClock/)
+___
+
 #### usage
 At the moment just clone and run index.html <br>
 clone: `git clone https://github.com/umair-khanzada/angularClock.git`
